@@ -22,7 +22,7 @@ nav #brand {
   padding: 1.5em;
 }
 
-nav #tweet {
+.tweet {
   font-size: 1.2em;
   padding: 1.5em;
 }
@@ -31,8 +31,3 @@ nav #tweet {
   font-weight: 700;
 }
 
-nav i {
-  color: red;
-  display: flex;
-  flex-direction: column;
-}
