@@ -1,6 +1,4 @@
-
-
-.container {
+.new-tweet {
   display: flex;
   flex-direction: column;
   height: 160px;  
@@ -13,6 +11,7 @@
 .new-tweet textarea {
   width: 100%;
   height: 50px;
+  background-color: #dee0df;
   border-style: none;
   border-bottom: 3px solid black;
 }

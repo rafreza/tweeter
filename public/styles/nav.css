@@ -22,12 +22,18 @@ nav #brand {
   padding: 1.5em;
 }
 
-.tweet {
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2em;
   padding: 1.5em;
 }
 
-#bolded {
-  font-weight: 700;
+i {
+  color: red;
 }
+
+
 

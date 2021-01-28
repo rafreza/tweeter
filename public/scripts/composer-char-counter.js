@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#tweet-text').keydown(function(event) {
+  $('#tweet-text').on("keydown", function(event) {
     let counter = parseInt($('.counter').text());
     // backspace has been pressed
     if (event.which === 8) {
