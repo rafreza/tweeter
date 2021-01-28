@@ -1,14 +1,14 @@
 $(document).ready(function () {
   // select textaera in class "new-tweet"
-  $(".new-tweet textarea").on("keyup", function (event) {
-    const countMax = 140;
-    const twUp = $(this).val().length;
-    const Tdown = countMax - twUp
-    $(".counter").text(Tdown);
-    if (Tdown <= 0) {
-      $(".counter").css("color", "red");
-    } else {
-    $(".counter").css("color", "#545149");
-      }
-    });
-});
+  let num = 0;
+ $('textarea').on('input', function () {
+    num = $(this).val().length;
+    $(this).closest('section').find('span').html(`${140 - num}`).removeClass('warning');
+    if (num > 140) {
+    $(this).closest('section').find('span').addClass('warning');
+    }
+  
+  })
+
+
+}); 
