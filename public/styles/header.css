@@ -1,4 +1,4 @@
-header {
+.mainHeader {
   display: flex;
   flex-direction: column;
   justify-content: center;
