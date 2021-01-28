@@ -31,9 +31,18 @@ nav #brand {
   padding: 1.5em;
 }
 
-i {
+.fa-angle-double-down {
+  margin-left: 50px;
   color: red;
+  cursor: pointer;
 }
+.fa-angle-double-down {
+  animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+  0% { transform: translateY(-3px); } /* Negative -> up */
+  100% { transform: translateY(8px); } /* Positive -> down */
+} 
 
 
 

@@ -39,7 +39,9 @@
 
     $hr.addClass('line').appendTo($div);
 
-    $('<p>').addClass('footerText').text(tweet['created_at']).prependTo($footer);
+    let createdTime = new Date(tweet['created_at']).toString().slice(4, 24);
+    $('<p>').addClass('footerText').text(createdTime).prependTo($footer);
+    
     $footer.append($fontAwsomeIcons);
     $footer.appendTo($div);
     $div.addClass(tweet.user.name);
@@ -79,8 +81,10 @@
     event.preventDefault();
     if ($('textarea').val().length === 0) {
       $errorBox.slideDown();
+      $errorBox2.hide(); 
     } else if ($('textarea').val().length > 140) {
       $errorBox2.slideDown();
+      $errorBox.hide(); 
     } else {
       $errorBox.slideUp();
       $errorBox2.slideUp();
