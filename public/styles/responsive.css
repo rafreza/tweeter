@@ -22,6 +22,7 @@
     align-items: center;
   }
   .new-tweet {
+    margin-top: 130px; 
     width : 90%;
   }
   .tweetContainer {

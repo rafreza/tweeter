@@ -76,7 +76,14 @@
   const $errorBox2 = $('<p>').addClass('error').text('Tweets are too long (more than 140 characters)!');
   $errorBox2.prependTo($('.container')).hide();
 
-      //post new tweets
+    //arrow redirects to copse tweet
+    $('.fa-angle-double-down').on('click', (event) => {
+      $("#new-tweet-input").focus();
+    });
+
+
+    //post new tweets
+   
    $('form').on('submit', (event) => {
     event.preventDefault();
     if ($('textarea').val().length === 0) {
