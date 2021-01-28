@@ -5,9 +5,10 @@ $(document).ready(function () {
     const twUp = $(this).val().length;
     const Tdown = countMax - twUp
     $(".counter").text(Tdown);
-    // if text is greater than character count, turn red
     if (Tdown <= 0) {
       $(".counter").css("color", "red");
-    } 
-  });
+    } else {
+    $(".counter").css("color", "#545149");
+      }
+    });
 });
