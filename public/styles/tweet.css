@@ -75,14 +75,12 @@ footer {
   visibility: visible;
 }
 
-/*
-I use the text-shadow instead of font-weight to avoid the text moving 
- */
+
 .tweetBox:hover {
   text-shadow: 0 0 .65px #333, 0 0 .65px #333;  
   box-shadow: 10px 10px 4px #546288;
 }
-
+/* Used when char count exceeds the 140 limit */
 .warning {
   color: red;
 }
