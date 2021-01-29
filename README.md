@@ -32,7 +32,10 @@ Thanks to responsive styling, Tweeter's display takes a new form if you're on mo
 
 3. Know your limit, stay within it!
 !["error"]
+(https://github.com/rafreza/tweeter/blob/master/docs/long-tweet.png)
 
+While some thoughts can never be expanded upon till the end of time and space, be sure to keep your tweets at a 140 character limit, otherwise you will not able to get your beautiful thoughts to flourish on the feed.
 
+And that's about all, go ahead and tweet to your liking!
 
 
