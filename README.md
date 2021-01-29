@@ -19,20 +19,20 @@ This repository is the starter code for the project: Students will fork and clon
 ## A Closer Look Into Tweeter!
 
  1. Tweeter (Desktop View)
- !["desktop-view"]
- (https://github.com/rafreza/tweeter/blob/master/docs/Desktop-view.png)
+
+ !["desktop-view"](https://github.com/rafreza/tweeter/blob/master/docs/Desktop-view.png)
 
  This is the desktop view of the Tweeter page, here you can see previous posted tweets and also tweets of your own! Once you ready your tweet in the text box above, it will show up right at the top of your feed!
 
  2. Tweeter (Mobile View)
-!["responsive-view"]
-(https://github.com/rafreza/tweeter/blob/master/docs/Responsive-view.png)
+
+!["responsive-view"](https://github.com/rafreza/tweeter/blob/master/docs/Responsive-view.png)
 
 Thanks to responsive styling, Tweeter's display takes a new form if you're on mobile or if you got a lot going on a single monitor. Regardless of your choice, it will work the same way just in a modified layout! This is perhaps the most intuitive way to tweet to your heart's content!
 
 3. Know your limit, stay within it!
-!["error"]
-(https://github.com/rafreza/tweeter/blob/master/docs/long-tweet.png)
+
+!["error"](https://github.com/rafreza/tweeter/blob/master/docs/long-tweet.png)
 
 While some thoughts can never be expanded upon till the end of time and space, be sure to keep your tweets at a 140 character limit, otherwise you will not able to get your beautiful thoughts to flourish on the feed.
 
