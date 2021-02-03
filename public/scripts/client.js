@@ -4,9 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
- 
-
 //Front-end JQuery render 
   const createTweetElement = function (tweet) {
     let $article = $('<article>');
@@ -20,7 +17,6 @@
     let $retweet = $('<i>').addClass('fas fa-retweet');
     let $like = $('<i>').addClass('fas fa-heart');
 
-
     $fontAwsomeIcons.append($flag);
     $fontAwsomeIcons.append($retweet);
     $fontAwsomeIcons.append($like);
@@ -31,7 +27,6 @@
     $leftOfHeader.prepend($('<img>', {src: tweet.user.avatars}));
     $leftOfHeader.addClass('leftContent').prependTo($header);
 
-    
     $('<p>').text(tweet.content.text).appendTo($article);
 
     $header.addClass('articleHeader').prependTo($article);
@@ -49,17 +44,13 @@
     $div.addClass('tweetBox');
   
     return $div;
-
   };
   //loops through tweet data array and render it to the tweetContainer
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
-      console.log(tweet);
-
       $('.tweetContainer').prepend(createTweetElement(tweet));
     }
   };
-
   //render added tweets which is the last element of the data array
   const loadTweets = () => {
     $.get('/tweets')
@@ -68,11 +59,9 @@
       });
   };
 
-  
   //main function
   $(document).ready(() => {
   
-
   const $errorBox = $('<p>').addClass('error').text("Empty tweets! You didn't input anything!");
   $errorBox.prependTo($('.container')).hide();
   const $errorBox2 = $('<p>').addClass('error').text('Tweets are too long (more than 140 characters)!');
@@ -82,7 +71,6 @@
     $('.fa-angle-double-down').on('click', (event) => {
       $("#new-tweet-input").focus();
     });
-
 
     //post new tweets
    
@@ -106,11 +94,9 @@
         .fail(error => console.log(error));
     }
   });
-    
       //Renders the tweets
       $.get('/tweets')
         .then((data) => {
           renderTweets(data);
-        });
-      
+        });  
   });
