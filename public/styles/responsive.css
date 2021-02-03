@@ -25,6 +25,10 @@
     margin-top: 130px; 
     width : 90%;
   }
+  .error {
+    margin-top: 130px;
+    margin-bottom: 0px;
+  }
   .tweetContainer {
     width: 90%;
   }
