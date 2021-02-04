@@ -35,9 +35,9 @@
     $hr.addClass('line').appendTo($div);
 
     // creates proper timestamp of when the tweet is created
-    let createdTime = new Date(tweet['created_at']).toString().slice(4, 24);
-    
-    $('<p>').addClass('footerText').text(createdTime).prependTo($footer);
+    let createdTime = new Date(tweet['created_at']);
+    $('<p>').addClass('footerText').addClass('timeago').text(jQuery.timeago(createdTime)).prependTo($footer);
+
     $footer.append($fontAwsomeIcons);
     $footer.appendTo($div);
     $div.addClass(tweet.user.name);
